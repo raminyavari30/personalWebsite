@@ -1,6 +1,8 @@
 body {
+  font-family: Arial;
   padding: 0;
   margin: 0;
+  background-color: #D5D5D5;
 }
 
 header {
@@ -11,8 +13,30 @@ header {
 h1 {
   color: #FFF;
   padding-bottom: 15px;
-  padding-left: 20px;
+  padding-left: 40px;
 }
+
+h2 {
+  padding-bottom: 20px;
+}
+
+.devicon {
+  text-align: center;
+}
+
+i {
+  cursor: pointer;
+  margin-right: 40px;
+  font-size: 100px;
+  text-align: center;  
+  color: #96858F;
+  transition: font-size .05s
+}
+
+i:hover {
+    font-size: 200px;
+}
+
 
 /*Nagivation Styling*/
 
@@ -36,6 +60,7 @@ h1 {
 .profile {
   width: 66%;
   float: left;
+  padding-right: 40px;
   box-sizing: border-box;
 }
 
