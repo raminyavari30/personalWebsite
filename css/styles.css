@@ -11,6 +11,7 @@ header {
 }
 
 h1 {
+  font-size: 150%;
   color: #FFF;
   padding-bottom: 15px;
   padding-left: 40px;
@@ -98,7 +99,7 @@ table {
   border-bottom: none;
 }
 
-.caffiend {
+.projectImages {
   width: 66%;
   float: left;
   width: 500px;

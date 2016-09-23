@@ -13,9 +13,9 @@
 
         <nav class="site-nav">
           <ul class="group">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href>Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="images/Resume.pdf">About</a></li>
           </ul>
         </nav>
       </div>
@@ -36,7 +36,7 @@
         <img src="images/ramin.jpg">
       </aside>
       <div class="technology">
-        <h2> Technology </h2>
+        <h2> Technologies </h2>
       </div>
       <div class="mid">
         <div class="rightColumn devicon">
@@ -49,11 +49,12 @@
         </div>
       </div>
       <div class="projects">
-        <h2> Projects</h2>
+        <h2> Portfolio</h2>
+        <a name="portfolio"></a>
       </div>
       <button class="accordion">Caffiend</button>
       <div class="panel">
-        <img class="caffiend" src="images/Caffiend.png">
+        <img class="projectImages" src="images/Caffiend.png">
         <p>Caffiend is a webapp that allows users to find their new favorite menu item at a given cafe. Users can search for cafes, view menus sorted by item rating, and add their own cafes and menu items.</p>
 
         <p>Caffiend is built in Angular on the front end, with a Node and Express backend that communicates with an SQLite3 database.</p>
@@ -92,12 +93,81 @@
 
       <button class="accordion">CityDash</button>
       <div class="panel">
-        <p>Lorem ipsum...</p>
+        <img class="projectImages" src="images/CityDash.png">
+        <p>CityDash is a simple multitool application that allows users to select specific city related informaton to display on their own customizable personal dashboard.
+        </p>
+
+        <p>CityDash is built in React on the front end, with Node and Express on the backend. Firebase stores all the user's data of preferred layouts and other user information.</p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Tech Stack</th>
+              <th>Links</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <ul class="project">
+                  <li>Javascript</li>
+                  <li>React</li>
+                  <li>Firebase</li>
+                  <li>Node/Express</li>
+                </ul>
+              </td>
+              <td class="tableInfo">
+                <ul class="links">
+                  <li>
+                    <a href="https://citydash.herokuapp.com/">View App!</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/raminyavari30/CityDash">Github</a>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
 
       <button class="accordion">Itinderary</button>
       <div class="panel">
-        <p>Lorem ipsum...</p>
+        <img class="projectImages" src="images/Itinderary.png">
+        <p>Itinderary is a web application that generates activities to do based on how the user is feeling. Itinderary cleverly uses the Yelp API combined with its own searching algorithm to return accurate results based on the mood of the user.</p>
+
+        <p> Itinderary is built in React, Redux, and React Router on the front end, with Node and Express on the back end. 
+
+        <table>
+          <thead>
+            <tr>
+              <th>Tech Stack</th>
+              <th>Links</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <ul class="project">
+                  <li>Javascript</li>
+                  <li>React</li>
+                  <li>Redux</li>
+                  <li>Node/Express</li>
+                </ul>
+              </td>
+              <td class="tableInfo">
+                <ul class="links">
+                  <li>
+                    <a href="https://citydash.herokuapp.com/">View App!</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/raminyavari30/CityDash">Github</a>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
     <footer></footer>
