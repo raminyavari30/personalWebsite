@@ -159,7 +159,7 @@ button.accordion.active:after {
 .profile {
   width: 66%;
   float: left;
-  padding-right: 40px;
+  padding-right: 100px;
   box-sizing: border-box;
 }
 
