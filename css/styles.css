@@ -1,5 +1,5 @@
 body {
-  font-family: Arial;
+  font-family: Fira Sans, Arial;
   padding: 0;
   margin: 0;
   background-color: #D5D5D5;
@@ -36,6 +36,14 @@ i {
 
 i:hover {
     font-size: 200px;
+}
+
+.content {
+  display: none;
+}
+
+.technology {
+  display: none;
 }
 
 footer {
