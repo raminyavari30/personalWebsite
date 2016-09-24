@@ -23,6 +23,7 @@ h2 {
 
 .devicon {
   text-align: center;
+  margin: auto;
 }
 
 i {
@@ -51,7 +52,11 @@ footer {
     height: 100px;
     margin-top: 50px;
     border-top: 2px solid #FFF;
+}
 
+section {
+  display: flex;
+  flex-direction: row;
 }
 
 ul {
