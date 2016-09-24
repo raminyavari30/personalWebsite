@@ -121,6 +121,9 @@ table {
 /*Accordion Styling*/
 
 button.accordion {
+    font-family: Fira Sans, Arial;
+    font-weight: bold;
+    font-size: 90%;
     background-color: #eee;
     color: #444;
     cursor: pointer;
