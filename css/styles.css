@@ -182,6 +182,12 @@ aside {
   float: left;
 }
 
+iframe {
+  padding-right: 40px;
+  padding-left: 40px;
+  box-sizing: border-box;
+}
+
 .site-nav a:hover {
   background-color: #9099A2;
 }
