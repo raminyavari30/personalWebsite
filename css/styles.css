@@ -36,7 +36,7 @@ i {
 }
 
 i:hover {
-    font-size: 200px;
+  font-size: 200px;
 }
 
 .content {
@@ -48,10 +48,10 @@ i:hover {
 }
 
 footer {
-    background-color: #6D7993;
-    height: 100px;
-    margin-top: 50px;
-    border-top: 2px solid #FFF;
+  background-color: #6D7993;
+  height: 100px;
+  margin-top: 50px;
+  border-top: 2px solid #FFF;
 }
 
 section {
@@ -62,33 +62,6 @@ section {
 ul {
   list-style: none;
 }
-
-.tableInfo {
-  display: table-row;
-}
-
-table tr th {
-  text-align: left;
-}
-
-.project {
-  padding: 0;
-}
-
-.links {
-  padding: 0;
-}
-
-.myImage {
-  padding-top: 15px;
-}
-
-table {
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 25px;
-}
-
 
 /*Nagivation Styling*/
 
@@ -112,16 +85,53 @@ table {
   border-bottom: none;
 }
 
-.projectImages {
-  width: 66%;
-  float: left;
-  width: 500px;
-  height: 300px;
-  margin-right: 20px;
-  box-sizing: border-box;
+.site-nav a:hover {
+  background-color: #9099A2;
 }
 
 /*Navigation Ending*/
+
+.content-area {
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.profile {
+  width: 66%;
+  float: left;
+  padding-right: 100px;
+  box-sizing: border-box;
+}
+
+.myImage {
+  padding-top: 15px;
+}
+
+/*Table Styling */
+
+.tableInfo {
+  display: table-row;
+}
+
+table tr th {
+  text-align: left;
+}
+
+.project {
+  padding: 0;
+}
+
+.links {
+  padding: 0;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 25px;
+}
+
+/*Table ending*/
 
 /*Accordion Styling*/
 
@@ -170,20 +180,16 @@ button.accordion.active:after {
   content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 
-/*Accordion Ending*/
-
-.profile {
+.projectImages {
   width: 66%;
   float: left;
-  padding-right: 100px;
+  width: 500px;
+  height: 300px;
+  margin-right: 20px;
   box-sizing: border-box;
 }
 
-.content-area {
-  padding-right: 40px;
-  padding-left: 40px;
-
-}
+/*Accordion Ending*/
 
 aside {
   width: 33%;
@@ -194,10 +200,6 @@ iframe {
   padding-right: 40px;
   padding-left: 40px;
   box-sizing: border-box;
-}
-
-.site-nav a:hover {
-  background-color: #9099A2;
 }
 
 /*clear Floats*/
