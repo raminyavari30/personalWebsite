@@ -17,8 +17,21 @@ h1 {
   padding-left: 40px;
 }
 
+@media screen and (max-width: 650px) {
+  h1 {
+    text-align: center;
+    padding: 0px;
+  }
+}
+
 h2 {
   padding-bottom: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  h2 {
+    text-align: center;
+  }
 }
 
 .technology {
@@ -73,6 +86,17 @@ ul {
   padding-top: 15px;
 }
 
+@media screen and (max-width: 770px) {
+  .profile,
+  .myImage {
+    width: auto;
+    float: none;
+    padding-right: 0px;
+    margin-left: 0px;
+
+  }
+}
+
 section {
   display: flex;
   flex-direction: row;
@@ -87,6 +111,12 @@ section {
   margin: auto;
 }
 
+/*@media screen and (max-width: 700px) {
+  .devicon {
+    margin-left: 30px;
+  }
+}*/
+
 i {
   cursor: pointer;
   margin-right: 40px;
@@ -96,9 +126,18 @@ i {
   transition: font-size .05s
 }
 
-i:hover {
-  font-size: 200px;
+@media screen and (max-width: 770px) {
+  i {
+    margin-right: 10px;
+  }
 }
+
+@media screen and (min-width: 800px) {
+  i:hover {
+    font-size: 200px;
+  }
+}
+
 
 /*Table Styling */
 
@@ -161,6 +200,13 @@ div.panel.show {
   max-height: 500px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
 }
 
+@media screen and (max-width: 800px) {
+  div.panel.show {
+    overflow: scroll;
+  }
+}
+
+
 button.accordion:after {
   content: '\02795'; /* Unicode character for "plus" sign (+) */
   font-size: 13px;
@@ -181,6 +227,13 @@ button.accordion.active:after {
   margin-top: 20px;
   margin-right: 20px;
   box-sizing: border-box;
+}
+
+@media screen and (max-width: 700px) {
+  .projectImages {
+    float: none;
+    margin-top: auto;
+  }
 }
 
 /*Accordion Ending*/
