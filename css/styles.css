@@ -55,6 +55,12 @@ ul {
   margin-bottom: 0px;
 }
 
+@media screen and (max-width: 770px) {
+  .site-nav ul li:nth-child(3) {
+    display:none;
+  }
+}
+
 .site-nav a {
   display: block;
   border: 3px solid #FFF;
@@ -229,10 +235,15 @@ button.accordion.active:after {
   box-sizing: border-box;
 }
 
+
 @media screen and (max-width: 700px) {
   .projectImages {
     float: none;
     margin-top: auto;
+    height: auto;
+    width: auto;
+    max-width: 300px;
+    max-height: 300px;
   }
 }
 
