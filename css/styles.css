@@ -103,6 +103,10 @@ ul {
   }
 }
 
+.ramin {
+  border-radius: 50%;
+}
+
 section {
   display: flex;
   flex-direction: row;

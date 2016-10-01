@@ -2,38 +2,36 @@
   The "active" class is used to add a background color to the current button when its belonging panel is open. 
   The "show" class is used to open the specific accordion panel */
 
-window.onload = () => {
+window.onload = function() {
   init();
 }
 
-const init = () => {
+var init = function() {
 
-  const acc = document.getElementsByClassName("accordion");
+  var acc = document.getElementsByClassName("accordion");
 
-  for (let i = 0; i < acc.length; i++) {
+  for (var i = 0; i < acc.length; i++) {
 
-      acc[i].onclick = function(){
+      acc[i].addEventListener("click",  function(){
           this.classList.toggle("active");
           this.nextElementSibling.classList.toggle("show");
-      }
+      });
   }
 
-  const devicons = document.getElementsByTagName("I");
+  var devicons = document.getElementsByTagName("I");
 
-  for(let i = 0; i < devicons.length; i++) {
+  for(var i = 0; i < devicons.length; i++) {
+    devicons[i].addEventListener("click", function() {
+      var siblings = this.parentNode.children;
 
-    devicons[i].onclick = function() {
-
-      let siblings = this.parentNode.children;
-
-      for(let j = 0; j < siblings.length; j++) {
+      for(var j = 0; j < siblings.length; j++) {
         siblings[j].classList.toggle("technology");
       }
       this.classList.toggle("technology");
 
-      let elementToShow = this.classList[0].split("-")[1];
+      var elementToShow = this.classList[0].split("-")[1];
       
       document.getElementById(elementToShow).classList.toggle("content");
-    }
+    });
   }
 }
