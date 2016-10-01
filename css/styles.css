@@ -258,11 +258,28 @@ aside {
   float: left;
 }
 
-iframe {
-  padding-right: 40px;
-  padding-left: 40px;
-  box-sizing: border-box;
+.iframeContainer {
+  margin: auto;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
 }
+
+@media screen and (max-width: 775px) {
+  .iframeContainer {
+    flex-wrap: wrap;
+    height: 700px;
+  }
+  .ramin {
+    height: 250px;
+    width: 250px;
+  }
+  .myImage {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 
 footer {
   background-color: #6D7993;
