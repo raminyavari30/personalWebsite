@@ -8,6 +8,7 @@ window.onload = function() {
 
 var init = function() {
 
+
   var acc = document.getElementsByClassName("accordion");
 
   for (var i = 0; i < acc.length; i++) {
@@ -21,17 +22,31 @@ var init = function() {
   var devicons = document.getElementsByTagName("I");
 
   for(var i = 0; i < devicons.length; i++) {
+
     devicons[i].addEventListener("click", function() {
       var siblings = this.parentNode.children;
 
       for(var j = 0; j < siblings.length; j++) {
-        siblings[j].classList.toggle("technology");
+        siblings[j].classList.toggle("hidden");
       }
-      this.classList.toggle("technology");
+      this.classList.toggle("hidden");
+      this.classList.toggle("active");
 
       var elementToShow = this.classList[0].split("-")[1];
-      
-      document.getElementById(elementToShow).classList.toggle("content");
+
+      document.getElementById(elementToShow).classList.toggle("hidden");
     });
   }
+
+var greetings = ["Hello!", "Hola!", "Salam!", "Namaste", "Ciao!"];
+
+var greeting = document.getElementsByClassName("greeting");
+console.log(greeting);
+greeting[0].addEventListener("click", function() {
+  var choice = Math.floor(Math.random() * greetings.length);
+
+  alert(greetings[choice]);
+
+  this.innerHTML = greetings[choice];
+});
 }

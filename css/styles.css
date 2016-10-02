@@ -34,10 +34,6 @@ h2 {
   }
 }
 
-.technology {
-  display: none;
-}
-
 ul {
   list-style: none;
 }
@@ -112,13 +108,17 @@ section {
   flex-direction: row;
 }
 
-.content {
+.hidden {
   display: none;
 }
 
 .devicon {
   text-align: center;
   margin: auto;
+}
+
+.active {
+  font-size: 200px;
 }
 
 /*@media screen and (max-width: 700px) {
@@ -133,7 +133,7 @@ i {
   font-size: 100px;
   text-align: center;  
   color: #96858F;
-  transition: font-size .05s
+  transition: font-size 0.3s ease-in-out
 }
 
 @media screen and (max-width: 770px) {
@@ -147,7 +147,6 @@ i {
     font-size: 200px;
   }
 }
-
 
 /*Table Styling */
 
@@ -279,7 +278,6 @@ aside {
     justify-content: center;
   }
 }
-
 
 footer {
   background-color: #6D7993;
