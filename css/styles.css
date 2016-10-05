@@ -15,6 +15,30 @@ h1 {
   color: #FFF;
   padding-bottom: 15px;
   padding-left: 40px;
+/*  -webkit-animation: fadeinout 3s infinite;
+  animation:  fadeinout 5s infinite;*/
+}
+
+/*@-webkit-keyframes fadeinout {
+  0%,100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+@keyframes fadeinout {
+  0%,100% { opacity: 0; }
+  50% { opacity: 1; }
+}*/
+
+.fadein {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 2s linear;
+}
+
+.fadeout {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 2s, opacity 2s linear;
 }
 
 @media screen and (max-width: 650px) {

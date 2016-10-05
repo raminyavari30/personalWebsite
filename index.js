@@ -51,19 +51,31 @@ var init = function() {
     this.innerHTML = greetings[choice];
   });
 
-  var quotes = ["Don't watch the clock; do what it does. Keep going.", "It always seems impossible until its done.", 
-  "Life is 10% what happens to you and 90% how you react to it.", 
-  "Try not to become a man of success, but rather try to become a man of value.", 
-  "Yesterday is not ours to recover, but tomorrow is ours to win or lose."];
+  var quotes = [ "\"Don't watch the clock; do what it does. Keep going.\" - Sam Levenson", 
+  "\"It always seems impossible until its done.\" - Nelson Mandela", 
+  "\"Life is 10% what happens to you and 90% how you react to it.\" - Charles R. Swindoll",
+  "\"Try not to become a man of success, but rather try to become a man of value.\" - Albert Einstein", 
+  "\"Yesterday is not ours to recover, but tomorrow is ours to win or lose.\" - Lyndon B. Johnson",
+  "\"Positive anything is better than negative nothing.\" - Elbert Hubbard",
+  "\"Always remember that you are absolutely unique. Just like everyone else\" - Margaret Mead"
+  ];
 
+  var quote = document.getElementsByTagName("H1");
+  var randomQuote;
   setInterval(function() {
-
-    var quote = document.getElementsByTagName("H1");
     
-    var randomQuote = Math.floor(Math.random() * quotes.length);
+    quote[0].classList.add("fadeout")
+    if(quote[0].classList[0] === "fadeout" && typeof randomQuote === "number") {
+      quote[0].innerHTML = quotes[randomQuote];
+      // quote[0].classList.remove("fadeout");
+      quote[0].classList.remove("fadeout");
+      quote[0].classList.add("fadein");
+      randomQuote = undefined;
+    }
+    else {
+    randomQuote = Math.floor(Math.random() * quotes.length);
+    quote[0].classList.remove("fadein");
+    }
 
-    quote[0].innerHTML = quotes[randomQuote];
-  }, 5000);
+  },4000);
 }
-
-
