@@ -15,19 +15,7 @@ h1 {
   color: #FFF;
   padding-bottom: 15px;
   padding-left: 40px;
-/*  -webkit-animation: fadeinout 3s infinite;
-  animation:  fadeinout 5s infinite;*/
 }
-
-/*@-webkit-keyframes fadeinout {
-  0%,100% { opacity: 0; }
-  50% { opacity: 1; }
-}
-
-@keyframes fadeinout {
-  0%,100% { opacity: 0; }
-  50% { opacity: 1; }
-}*/
 
 .fadein {
   visibility: visible;
@@ -77,6 +65,9 @@ ul {
 
 @media screen and (max-width: 770px) {
   .site-nav ul li:nth-child(3) {
+    display:none;
+  }
+  .site-nav ul li:nth-child(4) {
     display:none;
   }
 }
@@ -145,11 +136,11 @@ section {
   font-size: 200px;
 }
 
-/*@media screen and (max-width: 700px) {
-  .devicon {
-    margin-left: 30px;
+@media screen and (max-width: 700px) {
+  .active {
+    font-size: 100px;
   }
-}*/
+}
 
 i {
   cursor: pointer;

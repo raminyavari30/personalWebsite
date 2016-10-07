@@ -57,25 +57,30 @@ var init = function() {
   "\"Try not to become a man of success, but rather try to become a man of value.\" - Albert Einstein", 
   "\"Yesterday is not ours to recover, but tomorrow is ours to win or lose.\" - Lyndon B. Johnson",
   "\"Positive anything is better than negative nothing.\" - Elbert Hubbard",
-  "\"Always remember that you are absolutely unique. Just like everyone else\" - Margaret Mead"
+  "\"Always remember that you are absolutely unique. Just like everyone else\" - Margaret Mead",
+  "\"You miss 100% of the shots you don't take\" - Wayne Gretzky",
+  "\"Great minds discuss ideas; average minds discuss events; small minds discuss people\" - Eleanor Roosevelt"
   ];
 
   var quote = document.getElementsByTagName("H1");
+
   var randomQuote;
+
   setInterval(function() {
     
-    quote[0].classList.add("fadeout")
+    quote[0].classList.add("fadeout");
+
     if(quote[0].classList[0] === "fadeout" && typeof randomQuote === "number") {
+
       quote[0].innerHTML = quotes[randomQuote];
-      // quote[0].classList.remove("fadeout");
       quote[0].classList.remove("fadeout");
       quote[0].classList.add("fadein");
       randomQuote = undefined;
     }
     else {
-    randomQuote = Math.floor(Math.random() * quotes.length);
-    quote[0].classList.remove("fadein");
-    }
 
+      randomQuote = Math.floor(Math.random() * quotes.length);
+      quote[0].classList.remove("fadein");
+    }
   },4000);
 }
