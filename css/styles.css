@@ -62,26 +62,15 @@ ul {
   margin: 5px;
   margin-bottom: 0px;
 }
-
 @media screen and (max-width: 450px) {
+
   .site-nav ul li:nth-child(3) {
     display:none;
-  }
-  
-  .site-nav ul {
-    padding-left: 20px;
-  }
-}
+  } 
 
-@media screen and (max-width: 400px) {
-  .site-nav ul {
-    padding-left: 5px;
-  }
-
-  .site-nav li {
-    margin: 3px;
-    margin-bottom: 0px;
-  }
+  .site-nav ul li:nth-child(2) {
+    display:none;
+  } 
 }
 
 .site-nav a {
@@ -142,6 +131,7 @@ section {
   flex-direction: row;
 }
 
+
 .hidden {
   display: none;
 }
@@ -174,6 +164,7 @@ i {
   i {
     margin-right: 10px;
   }
+
 }
 
 @media screen and (min-width: 800px) {
@@ -181,6 +172,7 @@ i {
     font-size: 200px;
   }
 }
+
 
 /*Table Styling */
 
@@ -277,10 +269,15 @@ button.accordion.active:after {
   .projectImages {
     float: none;
     margin-top: auto;
+    margin-right: auto;
     height: auto;
     width: auto;
     max-width: 300px;
     max-height: 300px;
+  }
+
+  .image {
+    text-align: center;
   }
 }
 
