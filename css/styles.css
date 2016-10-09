@@ -73,6 +73,12 @@ ul {
   } 
 }
 
+@media screen and (min-width: 775px) {
+  .site-nav ul li:nth-child(5) {
+    display: none;
+  }
+}
+
 .site-nav a {
   display: block;
   border: 3px solid #FFF;
