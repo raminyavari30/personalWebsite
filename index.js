@@ -38,7 +38,7 @@ var init = function() {
     });
   }
 
-  var greetings = ["Hello!", "Hola!", "Salam!", "Namaste", "Ciao!"];
+  var greetings = ["Hello!", "Hola!", "Sup?", "Ciao!", "Yello", "Yo", "Holla!"];
 
   var greeting = document.getElementsByClassName("greeting");
 
