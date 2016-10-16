@@ -64,6 +64,12 @@ ul {
 }
 @media screen and (max-width: 450px) {
 
+  .site-nav {
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #FFF;
+  }
+
   .site-nav ul li:nth-child(3) {
     display:none;
   } 
@@ -73,7 +79,9 @@ ul {
   } 
 
   .site-nav ul {
-    padding-left: 5px;
+    padding-left: 0px;
+    margin-bottom: 0px;
+    border-bottom: none;
   }
 }
 
